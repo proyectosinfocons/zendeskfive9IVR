@@ -44,7 +44,7 @@ public class ZendeskController {
         List<String> createdAtValues = new ArrayList<>();
         DateTimeFormatter originalFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'");
         DateTimeFormatter targetFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        logger.info("Info message []  " + itemsNode);
+        logger.info("Info message init[]  ");
         if (!itemsNode.isEmpty()) {
             logger.info("Info message success register find id [] " + itemsNode);
             for (JsonNode item : itemsNode) {
@@ -70,8 +70,13 @@ public class ZendeskController {
                         }
                         if (formattedCurrentDate.after(formattedDate)) {
                             logger.info("Info message success register after day [] " + date);
-                            zendeskService.createZendesk(requestNubyx.getId(), requestNubyx.getNumber(), requestNubyx.getChannel());
-                            return ResponseEntity.ok(new MessageSucces("registered", requestNubyx.getId()));
+                            ResponseEntity<String> zendesksecond=zendeskService.createZendesk(requestNubyx.getId(), requestNubyx.getNumber(), requestNubyx.getChannel());
+                            String responseBodysecond = zendesksecond.getBody();
+                            ObjectMapper objectMappersecond = new ObjectMapper();
+                            JsonNode jsonNodesecond = objectMappersecond.readTree(responseBodysecond);
+                            JsonNode dataNodesecond = jsonNodesecond.get("data");
+                            String idcreatesecond = dataNodesecond.get("id").asText();
+                            return ResponseEntity.ok(new MessageSucces("registered", idcreatesecond));
                         }
                     }
                 }
@@ -81,9 +86,13 @@ public class ZendeskController {
             }
         } else {
             if (requestNubyx.getId().length() >= 8 && requestNubyx.getId().length() <= 11) {
-                logger.info("Info message success register first [] " + requestNubyx.getId());
-                zendeskService.createZendesk(requestNubyx.getId(), requestNubyx.getNumber(), requestNubyx.getChannel());
-                return ResponseEntity.ok(new MessageSucces("registered", requestNubyx.getId()));
+                ResponseEntity<String> zendesk=  zendeskService.createZendesk(requestNubyx.getId(), requestNubyx.getNumber(), requestNubyx.getChannel());
+                String responseBodyfirst = zendesk.getBody();
+                ObjectMapper objectMapperfirst = new ObjectMapper();
+                JsonNode jsonNodefirst = objectMapperfirst.readTree(responseBodyfirst);
+                JsonNode dataNodefirst = jsonNodefirst.get("data");
+                String idcreatefirst = dataNodefirst.get("id").asText();
+                return ResponseEntity.ok(new MessageSucces("registered", idcreatefirst));
             } else {
                 logger.info("Error message in length id first [] " + itemsNode);
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new MessageSucces("longitud de id no valido", null));

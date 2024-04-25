@@ -26,13 +26,12 @@ public class ZendeskService {
         headers.set("Authorization", "Bearer " + token);
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<>(headers);
-        logger.info("Traze message service in API extern list Zendesk  [] " + restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class));
         return restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class);
     }
 
-    public void createZendesk(String id, String number, String channel) {
+    public ResponseEntity<String> createZendesk(String id, String number, String channel) {
         String url = "https://api.getbase.com/v2/leads";
-        String tipoDocumento;
+        String tipoDocumento = "";
         switch (id.length()) {
             case 8:
                 tipoDocumento = "DNI";
@@ -46,7 +45,7 @@ public class ZendeskService {
             default:
                 logger.info("Traze message service in API extern get Zendesk id error in default [] " + id);
                 System.err.println("Error: Longitud de documento no válida.");
-                return;
+
         }
         String requestBody = "{ " +
                 "\"data\": {" +
@@ -70,7 +69,7 @@ public class ZendeskService {
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set("Authorization", "Bearer " + token);
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
-        logger.info("Traze message service in API extern create Zendesk lead  [] " + restTemplate.postForEntity(url, requestEntity, String.class));
-        restTemplate.postForEntity(url, requestEntity, String.class);
+        ResponseEntity<String> responseprueba=restTemplate.postForEntity(url, requestEntity, String.class);
+        return responseprueba;
     }
 }
