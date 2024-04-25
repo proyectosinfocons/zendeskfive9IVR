@@ -62,6 +62,11 @@
             <AppenderRef ref="console"/>
         </Logger>
 
+        <Logger name="com.inference.zendeskfive9IVR.service" additivity="false" level="info">
+            <AppenderRef ref="aopLog"/>
+            <AppenderRef ref="console"/>
+        </Logger>
+
         <Logger name="org.springframework" additivity="false" level="error">
             <AppenderRef ref="springLog"/>
             <AppenderRef ref="console"/>

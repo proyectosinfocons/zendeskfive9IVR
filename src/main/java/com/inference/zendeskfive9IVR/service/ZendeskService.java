@@ -26,7 +26,7 @@ public class ZendeskService {
         headers.set("Authorization", "Bearer " + token);
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<>(headers);
-        logger.info("Traze message in API extern list Zendesk  [] "+ restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class));
+        logger.info("Traze message service in API extern list Zendesk  [] "+ restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class));
         return restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class);
     }
 
@@ -44,6 +44,7 @@ public class ZendeskService {
                 tipoDocumento = "CARNET/PASAPORTE";
                 break;
             default:
+                logger.info("Traze message service in API extern get Zendesk id error in default [] "+ id);
                 System.err.println("Error: Longitud de documento no válida.");
                 return;
         }
@@ -69,7 +70,7 @@ public class ZendeskService {
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set("Authorization", "Bearer " + token);
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
-        logger.info("Traze message in API extern create Zendesk lead  [] "+ restTemplate.postForEntity(url, requestEntity, String.class));
+        logger.info("Traze message service in API extern create Zendesk lead  [] "+ restTemplate.postForEntity(url, requestEntity, String.class));
         restTemplate.postForEntity(url, requestEntity, String.class);
     }
 }
