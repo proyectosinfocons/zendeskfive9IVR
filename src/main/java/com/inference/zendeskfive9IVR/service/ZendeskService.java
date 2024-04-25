@@ -2,7 +2,12 @@ package com.inference.zendeskfive9IVR.service;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.http.*;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,12 +16,15 @@ public class ZendeskService {
 
     private static final Logger logger = LogManager.getLogger(ZendeskService.class);
 
+    @Value("${token.access.get}")
+    private String token;
+
     public ResponseEntity<String> listZendesk(String numeDocument) {
         RestTemplate restTemplate = new RestTemplate();
         String customerAPIUrl = "https://api.getbase.com/v2/leads?custom_fields[Nro Documento]=" + numeDocument;
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Authorization", "Bearer " + "18e45ee292b3becaadfe1a0c75ab5d510b724bffaf722e53bcf16a33ef004d4d");
-        headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
+        headers.set("Authorization", "Bearer " + token);
+        headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> entity = new HttpEntity<>(headers);
         logger.info("Traze message in API extern list Zendesk  [] "+ restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class));
         return restTemplate.exchange(customerAPIUrl, HttpMethod.GET, entity, String.class);
@@ -59,7 +67,7 @@ public class ZendeskService {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.set("Authorization", "Bearer " + "18e45ee292b3becaadfe1a0c75ab5d510b724bffaf722e53bcf16a33ef004d4d");
+        headers.set("Authorization", "Bearer " + token);
         HttpEntity<String> requestEntity = new HttpEntity<>(requestBody, headers);
         logger.info("Traze message in API extern create Zendesk lead  [] "+ restTemplate.postForEntity(url, requestEntity, String.class));
         restTemplate.postForEntity(url, requestEntity, String.class);
