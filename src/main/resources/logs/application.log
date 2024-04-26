@@ -65,3 +65,59 @@
 2024-04-25T15:58:03.216-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
 2024-04-25T15:58:03.217-0500 INFO No active profile set, falling back to default profiles: default
 2024-04-25T15:58:03.796-0500 INFO Started Zendeskfive9IvrApplication in 0.74 seconds (JVM running for 1.137)
+2024-04-25T16:26:53.223-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 11561 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:26:53.231-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:26:53.233-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:26:54.756-0500 INFO Started Zendeskfive9IvrApplication in 1.896 seconds (JVM running for 3.542)
+2024-04-25T16:27:01.307-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 11561 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:27:01.308-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:27:01.309-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:27:01.763-0500 INFO Started Zendeskfive9IvrApplication in 0.518 seconds (JVM running for 10.55)
+2024-04-25T16:27:10.377-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 11561 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:27:10.379-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:27:10.380-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:27:10.789-0500 INFO Started Zendeskfive9IvrApplication in 0.467 seconds (JVM running for 19.575)
+2024-04-25T16:27:14.442-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 11561 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:27:14.443-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:27:14.444-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:27:14.813-0500 INFO Started Zendeskfive9IvrApplication in 0.441 seconds (JVM running for 23.599)
+2024-04-25T16:27:25.431-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 11561 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:27:25.433-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:27:25.433-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:27:25.672-0500 INFO Started Zendeskfive9IvrApplication in 0.289 seconds (JVM running for 34.458)
+2024-04-25T16:30:16.210-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 12140 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:30:16.218-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:30:16.219-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:30:17.334-0500 INFO Started Zendeskfive9IvrApplication in 1.4 seconds (JVM running for 2.092)
+2024-04-25T16:30:54.744-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 12258 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:30:54.755-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:30:54.757-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:30:56.322-0500 INFO Started Zendeskfive9IvrApplication in 1.864 seconds (JVM running for 3.194)
+2024-04-25T16:31:01.833-0500 INFO Starting Zendeskfive9IvrApplication using Java 21.0.2 on joel-ROG-Strix-G513QM-G513QM with PID 12258 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T16:31:01.834-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T16:31:01.834-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T16:31:02.126-0500 INFO Started Zendeskfive9IvrApplication in 0.339 seconds (JVM running for 8.998)
+2024-04-25T19:56:16.485-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 52754 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T19:56:16.489-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T19:56:16.490-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T19:56:17.191-0500 INFO Started Zendeskfive9IvrApplication in 0.876 seconds (JVM running for 1.344)
+2024-04-25T20:02:29.828-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 53237 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T20:02:29.832-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T20:02:29.833-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T20:02:30.544-0500 INFO Started Zendeskfive9IvrApplication in 0.935 seconds (JVM running for 1.498)
+2024-04-25T20:13:45.385-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 54074 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T20:13:45.389-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T20:13:45.389-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T20:13:46.020-0500 INFO Started Zendeskfive9IvrApplication in 0.823 seconds (JVM running for 1.296)
+2024-04-25T20:24:16.169-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 54791 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T20:24:16.174-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T20:24:16.175-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T20:24:16.910-0500 INFO Started Zendeskfive9IvrApplication in 0.917 seconds (JVM running for 1.473)
+2024-04-25T20:31:38.011-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 55137 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-25T20:31:38.015-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-25T20:31:38.016-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-25T20:31:38.723-0500 INFO Started Zendeskfive9IvrApplication in 0.893 seconds (JVM running for 1.362)
+2024-04-26T00:41:03.423-0500 INFO Starting Zendeskfive9IvrApplication using Java 17.0.6 on joel-ROG-Strix-G513QM-G513QM with PID 199701 (/home/joel/Documentos/zendeskfive9IVR/target/classes started by joel in /home/joel/Documentos/zendeskfive9IVR)
+2024-04-26T00:41:03.428-0500 DEBUG Running with Spring Boot v2.4.0, Spring v5.3.1
+2024-04-26T00:41:03.429-0500 INFO No active profile set, falling back to default profiles: default
+2024-04-26T00:41:04.126-0500 INFO Started Zendeskfive9IvrApplication in 0.938 seconds (JVM running for 1.359)

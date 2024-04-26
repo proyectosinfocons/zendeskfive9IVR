@@ -32,6 +32,8 @@ public class ZendeskController {
 
     private static final Logger logger = LogManager.getLogger(ZendeskController.class);
 
+    private boolean validationExecuted = false;
+
     @PostMapping("/lead")
     public ResponseEntity<?> principal(
             @RequestBody RequestNubyx requestNubyx
@@ -68,7 +70,7 @@ public class ZendeskController {
                             logger.info("Error message in same day [] " + date);
                             return ResponseEntity.badRequest().body(new MessageSucces("unregistered", null));
                         }
-                        if (formattedCurrentDate.after(formattedDate)) {
+                        if (formattedCurrentDate.after(formattedDate)  && !validationExecuted) {
                             logger.info("Info message success register after day [] " + date);
                             ResponseEntity<String> zendesksecond=zendeskService.createZendesk(requestNubyx.getId(), requestNubyx.getNumber(), requestNubyx.getChannel());
                             String responseBodysecond = zendesksecond.getBody();
@@ -76,6 +78,7 @@ public class ZendeskController {
                             JsonNode jsonNodesecond = objectMappersecond.readTree(responseBodysecond);
                             JsonNode dataNodesecond = jsonNodesecond.get("data");
                             String idcreatesecond = dataNodesecond.get("id").asText();
+                            validationExecuted = true;
                             return ResponseEntity.ok(new MessageSucces("registered", idcreatesecond));
                         }
                     }
